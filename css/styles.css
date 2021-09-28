@@ -1,0 +1,229 @@
+body {
+    background: #f2f2f2;
+    font-family: 'Poppins', sans-serif;
+}
+
+header .nav {
+    min-height: 4rem;
+    overflow: hidden;
+    background: #fff;
+}
+
+header .logo h2 {
+    font-size: 16px;
+    display: inline-block;
+}
+header .logo p {
+    font-size: 14px;
+    display: inline-block;
+}
+
+header .logo .icono {
+    color: #bfbfbf;
+}
+
+header .logo svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+header .logo p {
+    color: #777777;
+}
+
+header .menu .c1 {background: #3da5e2;}
+header .menu .c2 {background: #005385;}
+header .menu .c3 {background: #003855;}
+
+header .menu .c1:hover {background: #0886cf;}
+header .menu .c2:hover {background: #00426a;}
+header .menu .c3:hover {background: #002d44;}
+
+.nav .logo .name-1 {
+    letter-spacing: 5px;
+    font-size: 25px;
+}
+.nav .logo .developer {
+    letter-spacing:3px;
+    font-size: 17px;
+}
+
+/* MAIN */
+/* Portfolio */
+.portfolio {
+    border-top: 3px solid #3da5e2;
+    background: #fff;
+}
+
+.portfolio .titulo {
+    color: #3da5e2;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.portfolio .galeria .image-container {
+    max-height: 180px;
+    
+    overflow: hidden; /* CON ESTO OCULTO EL RESTO DE LA IMAGEN QUE SOBRO DEL MAX HEIGHT PORQUE CORTA LA IMAGEN */   
+}
+
+.portfolio .galeria .image-container a {
+    background: #3da5e2;
+    display: inline-block;
+}
+
+.portfolio .galeria .image-container:hover img {
+    opacity: .6;
+}
+
+/* VENTANA MODAL */
+
+.modal-dialog {
+    max-width: 800px;
+}
+
+/* ACERCA DE */
+
+.acerca-de .photo .name {
+    color: #545454;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 2px;
+
+}
+
+.acerca-de .info .titulo {
+    color: #005385;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.acerca-de .info .summary {
+    letter-spacing: 1px;
+}
+
+.acerca-de .info .label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #005385;
+    margin-bottom: 10px;
+}
+
+.acerca-de .info .progress {
+    height: 22px;
+}
+
+.profile-pic {
+    height: 220px;
+    width: 220px;
+}
+
+
+/* CONTACT ME */
+
+.contacto {
+    border-top: 1px solid #cbcbcb;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+.contacto .titulo {
+    color: #005385;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.contacto .formular input[type="text"],
+.contacto .formular input[type="email"],
+.contacto .formular textarea {
+    padding: 15px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contacto .formular textarea {
+    height: 150px;
+    min-height: 150px;
+    max-height: 250px;
+}
+
+.contacto .formular .button {
+    background: #3da5e2;
+    border: none;
+    padding: 7px 30px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    width: auto;
+    border-radius: 3px;
+}
+
+.contacto .formular .button:hover {
+    background: #5db8e9;
+}
+
+/* FOOTER */
+
+.redes-sociales {
+    padding: 40px 0;
+    margin-bottom: 0px;
+}
+
+.redes-sociales .icono {
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    background: #cbcbcb;
+    display: inline-block;
+    margin: 0 20px;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: all .3s ease;
+}
+
+.redes-sociales .icono svg {
+    width: 40px;
+    height: 40px;
+}
+
+.redes-sociales .twitter {background: #1da1f2;}
+.redes-sociales .instagram {background: #833ad4;}
+.redes-sociales .facebook {background: #3b5998;}
+
+@media screen and (max-width: 576px) {
+    .redes-sociales .icono {
+        width: 50px;
+        height: 50px;
+    }
+    .redes-sociales .icono svg {
+        width: 25px;
+        height: 25px;
+
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .logo {
+        height: 76px;
+    }
+
+    header .menu {
+        min-height: 76px;
+    }
+    header .menu a {
+        width: 100%;
+    }
+
+    .portfolio .galeria .image-container:nth-child(1) {order: 1;}
+    .portfolio .galeria .image-container:nth-child(2) {order: 3;}
+    .portfolio .galeria .image-container:nth-child(3) {order: 6;}
+    .portfolio .galeria .image-container:nth-child(4) {order: 2;}
+    .portfolio .galeria .image-container:nth-child(5) {order: 5;}
+    .portfolio .galeria .image-container:nth-child(6) {order: 4;}
+    .portfolio .galeria .image-container:nth-child(7) {order: 7;} 
+    
+}
