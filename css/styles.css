@@ -93,10 +93,10 @@ header .menu .c3:hover {background: #002d44;}
 }
 
 .acerca-de .info .titulo {
-    color: #005385;
+    color: #3da5e2;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    font-size: 40px;
+    
     margin-bottom: 30px;
 }
 
@@ -129,10 +129,10 @@ header .menu .c3:hover {background: #002d44;}
 }
 
 .contacto .titulo {
-    color: #005385;
+    color: #3da5e2;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    font-size: 40px;
+    
     margin-bottom: 30px;
     text-align: center;
 }
